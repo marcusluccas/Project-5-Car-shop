@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 html, body{
@@ -40,6 +41,7 @@ header nav.desktop ul li{
     float: left;
     font-size: 23px;
     padding: 0 30px;
+    font-style: italic;
 }
 
 header nav.desktop a{
@@ -48,8 +50,9 @@ header nav.desktop a{
 }
 
 section.banner{
+    overflow: hidden;
     width: 100%;
-    height: 750px;
+    height: 650px;
     background-color: black;
     background-image: url('../images/bg.jpg');
     background-size: contain;
@@ -57,18 +60,74 @@ section.banner{
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1400px){
+.text-banner{
+    padding: 100px;
+}
+
+.text-banner-single{
+    width: 314px;
+    font-style: italic;
+    margin-top: 30px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+    background-image: url('../images/box-text.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+    width: 170px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    left: -20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+    width: 320px;
+    font-size: 21px;
+    color: black;
+    position: relative;
+    left: -30px;
+    line-height: 70px;
+    background-image: url('../images/box-white-text.png');
+}
+
+@media screen and (max-width: 768px){
     section.banner{
-        background-size: 90% auto;
-        background-position: 200% 100%;
+        background-size: cover;
+        background-position: 100px center;
+        height: 80vh;
+    }
+
+    nav.desktop{
+        display: none;
     }
 }
 
-@media screen and (max-width: 1024px){
-    section.banner{
-        background-size: cover;
-        background-position: center;
-        height: 70vw;
-        min-height: 500px;
+@media screen and (max-width: 580px){
+    .text-banner{
+        padding: 30px;
+    }
+    
+    .text-banner-single{
+        width: 240px;
+        font-size: 18px;
+    }
+
+    .text-banner .text-banner-single:nth-of-type(4){
+        width: 270px;
     }
 }
