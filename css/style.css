@@ -145,6 +145,7 @@ section.veiculos-destaque{
 }
 
 .line-titulo{
+    /*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
@@ -171,8 +172,9 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 section.veiculos-destaque .container{
+    /*Vamos deixar o padrão que é 1400*/
+    /*max-width: 1000px;*/
     padding: 40px 0;
-    text-align: left;
 }
 
 .vitrine-destaque{
@@ -202,19 +204,121 @@ section.veiculos-destaque .container{
     font-style: italic;
 }
 
-.vitrine-destaque a{
-    margin-left: 8px;
-    font-size: 16px;
-    color: white;
-    font-style: italic;
-    width: 150px;
-    margin-top: 10px;
+.btn1{
     text-align: center;
     display: block;
     line-height: 40px;
     background-color: #EB2D2D;
     text-decoration: none;
     border-bottom: 5px solid #B21E1E;
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+    width: 150px;
+}
+
+.vitrine-destaque a{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.servicos-descricao{
+    display: flex;
+}
+
+.half1{
+    width: 50%;
+    text-align: right;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+
+.half1-wraper{
+    padding-right: 20%;
+    display: inline-block;
+    text-align: left;
+}
+
+.half1-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half1-wraper ul{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.half1-wraper li{
+    margin-left: 15px;
+}
+
+.half1-wraper a{
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half2 .depoimento-single{
+    margin-top: 19px;
+}
+
+.depoimento-single p{
+    font-size: 22px;
+}
+
+.navigation{
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
+@media screen and (max-width: 1100px) {
+    .half1{
+        text-align: center;
+    }
+
+    .half1-wraper{
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -231,6 +335,16 @@ section.veiculos-destaque .container{
     nav.mobile{
         display: block;
     }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1, .half2{
+        padding: 80px 4%;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 580px){
