@@ -160,7 +160,7 @@ section.veiculos-destaque{
     background-color: black;
 }
 
-section.veiculos-destaque .line-titulo h2{
+.line-titulo h2{
     position: relative;
     background-color: white;
     display: inline-block;
@@ -304,6 +304,89 @@ section.veiculos-destaque .container{
     font-size: 23px;
 }
 
+section.contato{
+    padding: 80px 2%;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+section.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #CCC;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+section.contato textarea{
+    width: 100%;
+    border: 1px solid #CCC;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+section.contato input[type=submit]{
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    font-size: 19px;
+}
+
+footer nav ul li a{
+    color: white;
+    font-style: italic;
+    padding: 0 35px;
+    text-decoration: none;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
 @media screen and (max-width: 1100px) {
     .half1{
         text-align: center;
@@ -318,6 +401,14 @@ section.veiculos-destaque .container{
         display: block;
         margin-left: 0;
         margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .nome-depoimento{
+        float: left;
+        width: 100%;
+        margin: 20px 20px;
     }
 }
 
@@ -336,6 +427,12 @@ section.veiculos-destaque .container{
         display: block;
     }
 
+    .nome-depoimento{
+        float: right;
+        width: auto;
+        margin: 0px 0px;
+    }
+
     section.servicos-descricao{
         flex-direction: column;
     }
@@ -345,6 +442,21 @@ section.veiculos-destaque .container{
         width: 100%;
     }
 
+    .w50{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer p{
+        float: none;
+    }
 }
 
 @media screen and (max-width: 580px){
