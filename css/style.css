@@ -388,7 +388,7 @@ footer p{
 }
 
 section.venda{
-    padding: 90px 0;
+    padding: 90px 2%;
     min-height: 90%;
 }
 
@@ -402,7 +402,7 @@ section.venda{
 }
 
 .search1{
-    width: 300px;
+    width: 90%;
 }
 
 .search1 h2{
@@ -412,7 +412,7 @@ section.venda{
 }
 
 .search1 .barra-preco{
-    width: 300px;
+    width: 100%;
     height: 20px;
     background-color: white;
     border: 1px solid #CCC;
@@ -428,7 +428,7 @@ section.venda{
     width: 30%;
     height: 20px;
     border-radius: 20px;
-    background-color: rgb(200, 200, 200);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
 }
 
 .pointer-barra{
@@ -439,8 +439,8 @@ section.venda{
     top: -3px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: rgb(210, 210, 210);
-    border: 1px solid black;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    border: 1px solid #777;
 }
 
 .valor-pesquisa{
@@ -486,12 +486,37 @@ section.venda{
     border-radius: 3px;
     vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    display: none;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
 }
 
 .form-venda-wraper span{
     padding: 0 10px;
     display: inline-block;
     vertical-align: top;
+}
+
+.vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -563,6 +588,25 @@ section.venda{
 
     footer p{
         float: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        text-align: center;
+        width: 100%;
     }
 }
 
